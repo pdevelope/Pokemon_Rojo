@@ -1,0 +1,73 @@
+#screen{
+  width: 320px;
+  height: 288px;
+  border:1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  overflow:hidden;
+}
+
+#location{
+  background-image:url("../tiles/ground.png");
+  position:relative;
+}
+
+#blackScreen{
+  position:absolute;
+  background-color: black;
+  opacity: 0;
+  width:0;
+  height:0;
+  z-index: 1000;
+}
+
+#up,#down{
+  position: relative;
+  float: left;
+  background-image:url("../tiles/ground.png");
+}
+
+#player{
+  background-image:url("../sprites/down.png");
+  width:28px;
+  height:32px;
+  position: relative;
+  z-index: 999;
+}
+
+#borderTop{
+  height:160px;
+  position:relative;
+  float: left;
+}
+
+#borderLeft{
+  width:128px;
+  position:relative;
+  float: left;
+}
+
+#borderRight{
+  width:160px;
+  position:relative;
+  float: left;
+}
+
+#borderDown{
+  height:128px;
+  position:relative;
+  float: left;
+}
+
+body{
+  text-align:center;
+}
+
+.shadow {
+    position: absolute;
+    width: 28px;
+    height: 14px;
+    background: black;
+    z-index: 998;
+    border-radius: 50%;
+}
